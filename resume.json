@@ -27,6 +27,11 @@
   ],
   "projects": [
     {
+      "name": "Retail Manager Puerto Rico",
+      "description": "Delivered a 2026 AI support MVP that turned VTiger CRM and documentation into a searchable knowledge system with Supabase, a Node.js/Express/TypeScript API, document ingestion scripts, and ChatGPT Custom GPT action support for bilingual internal troubleshooting.",
+      "url": "https://github.com/elindiotaino/vtiger-support-copilot-mvp"
+    },
+    {
       "name": "Specialty Property Management, LLC",
       "description": "Delivered a complete multi-page business website with brand assets, responsive layouts, and deployable public exports.",
       "url": "https://spm.services"
