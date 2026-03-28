@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Jose Cancel",
+    "label": "Full-stack developer and digital product builder",
+    "email": "hello@joche.dev",
+    "url": "https://joche.dev",
+    "summary": "Independent full-stack developer based in Puerto Rico, focused on accessible, performant, results-oriented websites and web applications."
+  },
+  "skills": [
+    {
+      "name": "Frontend",
+      "keywords": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+    },
+    {
+      "name": "Backend",
+      "keywords": ["Node.js", "Python", "PHP", "API integrations"]
+    },
+    {
+      "name": "Data",
+      "keywords": ["PostgreSQL", "MySQL", "MongoDB", "Supabase"]
+    },
+    {
+      "name": "Platform",
+      "keywords": ["Vercel", "AWS", "DigitalOcean", "Stripe"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Specialty Property Management, LLC",
+      "description": "Delivered a complete multi-page business website with brand assets, responsive layouts, and deployable public exports.",
+      "url": "https://spm.services"
+    },
+    {
+      "name": "Yupa Brothers Corp",
+      "description": "Supported strategy, identity, website planning, implementation, and post-launch maintenance for a food business digital presence.",
+      "url": "https://yupabrothers.com"
+    },
+    {
+      "name": "Amador Trucking Company",
+      "description": "Built a bilingual logistics website and supporting collateral, followed by SEO planning work.",
+      "url": "https://amadortrucking.com"
+    }
+  ],
+  "meta": {
+    "notes": [
+      "The attached PDF in assets/ is the current visual resume baseline.",
+      "Detailed work history should be transcribed from the PDF or updated directly here."
+    ]
+  }
+}
