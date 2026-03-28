@@ -1,0 +1,10 @@
+{
+  "name": "jose-cancel-resume",
+  "private": true,
+  "version": "0.1.0",
+  "description": "JSON Resume source with Quarto PDF export",
+  "scripts": {
+    "render:md": "node scripts/render-resume.mjs",
+    "render:pdf": "npm run render:md && quarto render build/resume.qmd --to pdf --output ../dist/jose-cancel-resume.pdf"
+  }
+}

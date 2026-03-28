@@ -13,6 +13,8 @@ This repository uses the open `JSON Resume` format as the maintainable source of
 
 - `resume.json`: structured resume data
 - `assets/Resume - Jose Cancel - 2024.pdf`: current PDF baseline provided by Jose Cancel
+- `scripts/render-resume.mjs`: converts `resume.json` into Quarto markdown for rendering
+- `dist/jose-cancel-resume.pdf`: generated PDF output
 
 ## Notes
 
@@ -22,13 +24,21 @@ This repository uses the open `JSON Resume` format as the maintainable source of
 
 ## Rendering options
 
-Typical local workflow with the JSON Resume ecosystem:
+The repo now includes a repeatable open-source PDF workflow:
 
 ```bash
-npx resume-cli export resume.html --theme stackoverflow
+npm run render:pdf
 ```
 
-Or validate the schema:
+That command:
+
+- Reads `resume.json`
+- Generates `build/resume.qmd`
+- Uses Quarto to render `dist/jose-cancel-resume.pdf`
+
+The source of truth remains `resume.json`, so future updates only need to touch that file.
+
+Optional schema validation:
 
 ```bash
 npx ajv validate -s https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json -d resume.json

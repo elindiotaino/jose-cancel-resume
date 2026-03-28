@@ -1,4 +1,6 @@
 node_modules/
-dist/
+dist/*
+!dist/jose-cancel-resume.pdf
+build/
 coverage/
 .DS_Store
