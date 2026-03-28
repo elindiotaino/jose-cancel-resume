@@ -53,7 +53,7 @@ const contactLine = [basics.email, basics.url?.replace(/^https?:\/\//, "")]
 
 const lines = [
   "---",
-  `title: "${String(basics.name ?? "Resume").replace(/"/g, '\\"')}"`,
+  'title: ""',
   "format:",
   "  pdf:",
   "    toc: false",
