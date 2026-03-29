@@ -78,12 +78,24 @@ function workBlock(entry) {
   return lines.join("\n");
 }
 
+function projectBlock(entry) {
+  return [
+    `\\resumeProjectTitle{${latex(entry.name)}}`,
+    `\\resumeProjectBody{${latex(entry.description)}}`,
+    "\\vspace{0.2em}",
+  ].join("\n");
+}
+
 const basics = resume.basics ?? {};
 const locationLine = [basics.location?.city, basics.location?.region].filter(Boolean).join(", ");
 const contactBits = [locationLine, basics.phone, basics.email, basics.url]
   .filter(Boolean)
   .map((item) => latex(String(item).replace(/^https?:\/\//, "https://")))
   .join(" \\textbar{} ");
+const selectedProjects = (resume.projects ?? []).filter(
+  (entry) =>
+    !["Retail Manager Puerto Rico", "Astrid Velez & Alliances"].includes(entry.name),
+);
 
 const lines = [
   "---",
@@ -127,6 +139,8 @@ const lines = [
   "    \\newcommand{\\resumeEntryTitle}[1]{{\\color{brandDeep}\\fontsize{8.8pt}{9.8pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.04em}}",
   "    \\newcommand{\\resumeEntryMeta}[1]{{\\color{brandMuted}\\fontsize{7.9pt}{8.9pt}\\selectfont #1}\\par\\vspace{0.03em}}",
   "    \\newcommand{\\resumeBody}[1]{{\\raggedright\\color{brandText}\\fontsize{8.0pt}{8.8pt}\\selectfont #1\\par}\\vspace{0.02em}}",
+  "    \\newcommand{\\resumeProjectTitle}[1]{{\\color{brandDeep}\\fontsize{7.9pt}{8.7pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.01em}}",
+  "    \\newcommand{\\resumeProjectBody}[1]{{\\raggedright\\color{brandText}\\fontsize{7.35pt}{8.1pt}\\selectfont #1\\par}\\vspace{0.01em}}",
   "---",
   "",
   "\\begin{tcolorbox}[enhanced,colback=brandDeep,colframe=brandDeep,arc=5pt,boxrule=0pt,left=11pt,right=11pt,top=9pt,bottom=9pt]",
@@ -154,6 +168,9 @@ const lines = [
   "\\vspace{0.14em}",
   "\\resumeMainSection{Experience}",
   ...(resume.work ?? []).map(workBlock),
+  "\\vspace{0.02em}",
+  "\\resumeMainSection{Selected Projects}",
+  ...selectedProjects.map(projectBlock),
   "\\end{tcolorbox}",
   "\\end{minipage}",
   "",

@@ -101,6 +101,10 @@
   ],
   "projects": [
     {
+      "name": "Fase 1 Intensive Logo Cohorts",
+      "description": "Presented a high-volume identity program as one coherent case study, covering 313 deduplicated logo exports across 42 client or group labels with revision packages, surveys, invoices, and final brand-kit deliverables."
+    },
+    {
       "name": "Retail Manager Puerto Rico",
       "description": "Delivered a 2026 AI support MVP that turned VTiger CRM and documentation into a searchable knowledge system with Supabase, a Node.js/Express/TypeScript API, document ingestion scripts, and ChatGPT Custom GPT action support for bilingual internal troubleshooting.",
       "url": "https://github.com/elindiotaino/vtiger-support-copilot-mvp"
