@@ -47,7 +47,7 @@ function sidebarSection(title, items) {
 
 function skillBlock(skill) {
   const keywords = (skill.keywords ?? []).map((item) => latex(item)).join(", ");
-  return `\\resumeSidebarItem{${latex(skill.name)}}{${keywords}}`;
+  return `\\resumeSidebarItem{${latex(skill.name)}}{${keywords}}\\resumeSidebarDivider`;
 }
 
 function interestBlock(interest) {
@@ -134,6 +134,7 @@ const lines = [
   "    \\setlist[itemize]{leftmargin=1.05em,itemsep=0.1em,topsep=0.08em,parsep=0pt,partopsep=0pt}",
   "    \\newcommand{\\resumeSidebarSection}[1]{\\vspace{0.08em}{\\color{brandGlow}\\fontsize{9pt}{10pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.24em}}",
   "    \\newcommand{\\resumeSidebarItem}[2]{{\\raggedright\\color{white}\\fontsize{8.5pt}{9.5pt}\\selectfont #1\\par}\\vspace{0.05em}{\\raggedright\\color{white!84}\\fontsize{7.8pt}{8.8pt}\\selectfont #2\\par}\\vspace{0.26em}}",
+  "    \\newcommand{\\resumeSidebarDivider}{{\\color{brandAmber!92!white}\\rule{\\linewidth}{0.35pt}}\\par\\vspace{0.32em}}",
   "    \\newcommand{\\resumeLanguageItem}[2]{{\\color{white}\\fontsize{8.5pt}{9.5pt}\\selectfont #1}\\hfill{\\color{brandAmber!88!white}\\fontsize{8.5pt}{9.5pt}\\selectfont #2}\\par\\vspace{0.22em}}",
   "    \\newcommand{\\resumeMainSection}[1]{\\vspace{0.04em}\\tcbox[colback=brandSoft,colframe=brandGlow,boxrule=0pt,arc=2pt,left=5pt,right=5pt,top=3pt,bottom=3pt]{\\color{brandDeep}\\fontsize{9pt}{10pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.16em}}",
   "    \\newcommand{\\resumeEntryTitle}[1]{{\\color{brandDeep}\\fontsize{8.8pt}{9.8pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.04em}}",
