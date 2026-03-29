@@ -27,7 +27,7 @@
     },
     {
       "name": "Data & AI Systems",
-      "keywords": ["VTiger CRM", "Supabase", "Knowledge Systems"]
+      "keywords": ["VTiger", "Supabase", "Knowledge Systems"]
     },
     {
       "name": "Programming",
@@ -47,7 +47,7 @@
       "endDate": "2026-03",
       "summary": "Delivered an AI support MVP that turned VTiger CRM cases and docs into a searchable bilingual troubleshooting system.",
       "highlights": [
-        "Built the Supabase knowledge layer, Node.js API, and import tooling for CRM and PDF sources.",
+        "Built the Supabase knowledge layer, Node.js API, and import tooling for CRM and PDF data.",
         "Prepared ChatGPT Custom GPT action support for internal support testing."
       ]
     },
@@ -60,7 +60,7 @@
       "summary": "Led digital solutions for a Spanish-first consulting, coaching, and training business.",
       "highlights": [
         "Built the official website in React, Vite, and Tailwind.",
-        "Supported digital infrastructure, design direction, and technology decisions."
+        "Supported digital infrastructure, design direction, and technical decisions."
       ]
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "name": "Technology Exploration",
-      "keywords": ["Emerging Tech", "Gadgets", "Software Trends"]
+      "keywords": ["Emerging Tech", "Gadgets", "Software"]
     },
     {
       "name": "Self-Improvement",
