@@ -14,28 +14,28 @@
   },
   "skills": [
     {
-      "name": "UI/UX Design",
-      "keywords": ["UI", "UX", "Design Systems", "Figma"]
+      "name": "Frontend",
+      "keywords": ["TypeScript", "JavaScript", "React", "Next.js", "Vite", "Tailwind CSS", "Framer Motion"]
     },
     {
-      "name": "Web Development",
-      "keywords": ["HTML", "CSS", "JavaScript", "React", "Next.js"]
+      "name": "Backend & APIs",
+      "keywords": ["Node.js", "Express", "Python", "FastAPI", "REST APIs", "Zod", "Server Integrations"]
     },
     {
-      "name": "Graphic Design",
-      "keywords": ["Adobe Suite", "Canva", "Brand Identity"]
+      "name": "Data & Platforms",
+      "keywords": ["Supabase", "PostgreSQL", "SQLite", "Redis", "Stripe", "VTiger CRM", "OpenAI"]
     },
     {
-      "name": "Data & AI Systems",
-      "keywords": ["VTiger", "Supabase", "Knowledge Systems"]
+      "name": "Rust & Desktop",
+      "keywords": ["Rust", "Tauri", "Tokio", "Axum", "WebSockets", "React Three Fiber", "GStreamer"]
     },
     {
-      "name": "Programming",
-      "keywords": ["Python", "TypeScript", "Node.js", "PHP", "Git"]
+      "name": "Design",
+      "keywords": ["Figma", "Adobe Creative Suite", "Brand Identity", "Design Systems", "Responsive UI", "Motion"]
     },
     {
-      "name": "Soft Skills",
-      "keywords": ["Communication", "Problem Solving", "Client Work"]
+      "name": "Tooling & Delivery",
+      "keywords": ["Git", "Playwright", "Storybook", "PostCSS", "Turborepo", "npm", "Static Deployments"]
     }
   ],
   "work": [
