@@ -10,24 +10,24 @@
       "region": "Puerto Rico"
     },
     "url": "https://joche.dev",
-    "summary": "Multifaceted developer focused on full-stack delivery, digital design, brand systems, and AI-enabled support workflows. I build practical solutions that improve clarity, usability, and day-to-day business operations."
+    "summary": "Multifaceted developer focused on full-stack delivery, digital design, brand systems, and AI-enabled support workflows for real business operations."
   },
   "skills": [
     {
       "name": "UI/UX Design",
-      "keywords": ["User Interface", "User Experience", "Design Systems", "Figma"]
+      "keywords": ["UI", "UX", "Design Systems", "Figma"]
     },
     {
       "name": "Web Development",
-      "keywords": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Responsive Design"]
+      "keywords": ["HTML", "CSS", "JavaScript", "React", "Next.js"]
     },
     {
       "name": "Graphic Design",
-      "keywords": ["Adobe Suite", "Canva", "Brand Identity", "Production Assets"]
+      "keywords": ["Adobe Suite", "Canva", "Brand Identity"]
     },
     {
       "name": "Data & AI Systems",
-      "keywords": ["Data Analysis", "VTiger CRM", "Supabase", "Knowledge Systems"]
+      "keywords": ["VTiger CRM", "Supabase", "Knowledge Systems"]
     },
     {
       "name": "Programming",
@@ -35,7 +35,7 @@
     },
     {
       "name": "Soft Skills",
-      "keywords": ["Communication", "Problem Solving", "Client Collaboration"]
+      "keywords": ["Communication", "Problem Solving", "Client Work"]
     }
   ],
   "work": [
@@ -45,10 +45,10 @@
       "location": "San Juan, Puerto Rico",
       "startDate": "2026-01",
       "endDate": "2026-03",
-      "summary": "Delivered an AI support MVP that turned VTiger CRM cases and official documentation into a searchable internal knowledge system for bilingual troubleshooting.",
+      "summary": "Delivered an AI support MVP that turned VTiger CRM cases and docs into a searchable bilingual troubleshooting system.",
       "highlights": [
-        "Built a Supabase-backed knowledge layer, Node.js / Express / TypeScript API, and import tooling for CRM and PDF sources.",
-        "Prepared ChatGPT Custom GPT action support so management and staff could run real internal support tests."
+        "Built the Supabase knowledge layer, Node.js API, and import tooling for CRM and PDF sources.",
+        "Prepared ChatGPT Custom GPT action support for internal support testing."
       ]
     },
     {
@@ -57,10 +57,10 @@
       "location": "San Juan, Puerto Rico",
       "startDate": "2021-01",
       "endDate": "2026-01",
-      "summary": "Led the design and implementation of digital solutions for a Spanish-first consulting, coaching, and training business.",
+      "summary": "Led digital solutions for a Spanish-first consulting, coaching, and training business.",
       "highlights": [
-        "Built the official website and translated service positioning into a polished React, Vite, and Tailwind experience.",
-        "Supported the firm's digital infrastructure, design direction, and technology decisions for client-facing growth."
+        "Built the official website in React, Vite, and Tailwind.",
+        "Supported digital infrastructure, design direction, and technology decisions."
       ]
     },
     {
@@ -68,10 +68,10 @@
       "position": "Full-Stack Developer & IT Consultant",
       "location": "San Juan, Puerto Rico",
       "startDate": "2019-04",
-      "summary": "Independent practice delivering websites, brand systems, and technical consulting for businesses and startups.",
+      "summary": "Independent practice delivering websites, brand systems, and technical consulting.",
       "highlights": [
-        "Designed and shipped websites, brand assets, and digital tooling aligned to client business goals.",
-        "Delivered the PrintMOP brand system and commercial vehicle wrap package from logo development through production-ready assets."
+        "Designed and shipped websites, brand assets, and digital tooling for client needs.",
+        "Delivered the PrintMOP brand system and vehicle wrap package."
       ]
     }
   ],

@@ -64,22 +64,17 @@ function workBlock(entry) {
   const end = entry.endDate ? formatDate(entry.endDate) : "Present";
   const lines = [
     `\\resumeEntryTitle{${latex(entry.name)}}`,
-    `\\resumeEntryMeta{${latex(entry.position)}}`,
-    `\\resumeEntryMeta{${latex(entry.location)}}`,
-    `\\resumeEntryMeta{${latex(`${start} - ${end}`)}}`,
+    `\\resumeEntryMeta{${latex(`${entry.position} | ${entry.location} | ${start} - ${end}`)}}`,
     `\\resumeBody{${latex(entry.summary)}}`,
   ];
 
   if (entry.highlights?.length) {
-    lines.push("\\resumeBody{Key Responsibilities:}");
     lines.push("\\begin{itemize}");
-    for (const item of entry.highlights) {
-      lines.push(`\\item ${latex(item)}`);
-    }
+    lines.push(`\\item ${latex(entry.highlights[0])}`);
     lines.push("\\end{itemize}");
   }
 
-  lines.push("\\vspace{0.85em}");
+  lines.push("\\vspace{0.4em}");
   return lines.join("\n");
 }
 
@@ -98,8 +93,8 @@ const lines = [
   "    toc: false",
   "    colorlinks: false",
   "    geometry:",
-  "      - margin=0.45in",
-  "    fontsize: 10pt",
+  "      - margin=0.32in",
+  "    fontsize: 9pt",
   "title-block: false",
   "header-includes:",
   "  - |",
@@ -120,44 +115,41 @@ const lines = [
   "    \\definecolor{brandSoft}{HTML}{EAF7FD}",
   "    \\definecolor{brandText}{HTML}{11222D}",
   "    \\definecolor{brandMuted}{HTML}{4F6470}",
-  "    \\setlist[itemize]{leftmargin=1.25em,itemsep=0.22em,topsep=0.2em,parsep=0pt,partopsep=0pt}",
-  "    \\newcommand{\\resumeSidebarSection}[1]{\\vspace{0.15em}{\\color{brandGlow}\\fontsize{10.5pt}{12pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.5em}}",
-  "    \\newcommand{\\resumeSidebarItem}[2]{{\\color{white}\\fontsize{10.5pt}{12pt}\\selectfont #1}\\par\\vspace{0.12em}{\\color{white!82}\\fontsize{9.19pt}{11pt}\\selectfont #2}\\par\\vspace{0.72em}}",
-  "    \\newcommand{\\resumeLanguageItem}[2]{{\\color{white}\\fontsize{10.5pt}{12pt}\\selectfont #1}\\par{\\color{brandAmber!88!white}\\fontsize{10.5pt}{12pt}\\selectfont #2}\\par\\vspace{0.72em}}",
-  "    \\newcommand{\\resumeMainSection}[1]{\\vspace{0.15em}\\tcbox[colback=brandSoft,colframe=brandGlow,boxrule=0pt,arc=3pt,left=7pt,right=7pt,top=5pt,bottom=5pt]{\\color{brandDeep}\\fontsize{10.5pt}{12pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.55em}}",
-  "    \\newcommand{\\resumeEntryTitle}[1]{{\\color{brandDeep}\\fontsize{10.5pt}{12pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.08em}}",
-  "    \\newcommand{\\resumeEntryMeta}[1]{{\\color{brandMuted}\\fontsize{10.5pt}{12pt}\\selectfont #1}\\par\\vspace{0.08em}}",
-  "    \\newcommand{\\resumeBody}[1]{{\\color{brandText}\\fontsize{10.5pt}{12pt}\\selectfont #1}\\par\\vspace{0.08em}}",
+  "    \\setlist[itemize]{leftmargin=1.05em,itemsep=0.1em,topsep=0.08em,parsep=0pt,partopsep=0pt}",
+  "    \\newcommand{\\resumeSidebarSection}[1]{\\vspace{0.08em}{\\color{brandGlow}\\fontsize{9pt}{10pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.24em}}",
+  "    \\newcommand{\\resumeSidebarItem}[2]{{\\color{white}\\fontsize{8.5pt}{9.5pt}\\selectfont #1}\\par\\vspace{0.06em}{\\color{white!84}\\fontsize{7.8pt}{8.8pt}\\selectfont #2}\\par\\vspace{0.34em}}",
+  "    \\newcommand{\\resumeLanguageItem}[2]{{\\color{white}\\fontsize{8.5pt}{9.5pt}\\selectfont #1}\\hfill{\\color{brandAmber!88!white}\\fontsize{8.5pt}{9.5pt}\\selectfont #2}\\par\\vspace{0.22em}}",
+  "    \\newcommand{\\resumeMainSection}[1]{\\vspace{0.04em}\\tcbox[colback=brandSoft,colframe=brandGlow,boxrule=0pt,arc=2pt,left=5pt,right=5pt,top=3pt,bottom=3pt]{\\color{brandDeep}\\fontsize{9pt}{10pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.16em}}",
+  "    \\newcommand{\\resumeEntryTitle}[1]{{\\color{brandDeep}\\fontsize{8.8pt}{9.8pt}\\selectfont\\textbf{#1}}\\par\\vspace{0.04em}}",
+  "    \\newcommand{\\resumeEntryMeta}[1]{{\\color{brandMuted}\\fontsize{7.9pt}{8.9pt}\\selectfont #1}\\par\\vspace{0.03em}}",
+  "    \\newcommand{\\resumeBody}[1]{{\\color{brandText}\\fontsize{8.0pt}{8.8pt}\\selectfont #1}\\par\\vspace{0.02em}}",
   "---",
   "",
-  "\\begin{tcolorbox}[enhanced,colback=brandDeep,colframe=brandDeep,arc=6pt,boxrule=0pt,left=14pt,right=14pt,top=12pt,bottom=12pt]",
-  "{\\color{brandAmber}\\rule{5.2cm}{1.3pt}}\\\\[-0.2em]",
-  `{\\color{white}\\fontsize{15.75pt}{18pt}\\selectfont ${latex(basics.name)}}\\\\`,
-  "\\vspace{0.18em}",
-  `{\\color{white!92}\\fontsize{10.5pt}{12.5pt}\\selectfont ${latex(basics.label)}}\\\\`,
-  "\\vspace{0.55em}",
-  `{\\color{brandGlow}\\fontsize{9.19pt}{11pt}\\selectfont ${contactBits}}`,
+  "\\begin{tcolorbox}[enhanced,colback=brandDeep,colframe=brandDeep,arc=5pt,boxrule=0pt,left=11pt,right=11pt,top=9pt,bottom=9pt]",
+  "{\\color{brandAmber}\\rule{4.5cm}{1.1pt}}\\\\[-0.15em]",
+  `{\\color{white}\\fontsize{14.6pt}{16.5pt}\\selectfont ${latex(basics.name)}}\\\\`,
+  "\\vspace{0.08em}",
+  `{\\color{white!92}\\fontsize{8.7pt}{9.8pt}\\selectfont ${latex(basics.label)}}\\\\`,
+  "\\vspace{0.28em}",
+  `{\\color{brandGlow}\\fontsize{7.7pt}{8.8pt}\\selectfont ${contactBits}}`,
   "\\end{tcolorbox}",
   "",
-  "\\vspace{0.45em}",
+  "\\vspace{0.22em}",
   "\\noindent",
-  "\\begin{minipage}[t]{0.32\\textwidth}",
-  "\\begin{tcolorbox}[enhanced,colback=brandDeep,colframe=brandDeep,arc=6pt,boxrule=0pt,left=11pt,right=11pt,top=10pt,bottom=10pt]",
+  "\\begin{minipage}[t]{0.295\\textwidth}",
+  "\\begin{tcolorbox}[enhanced,colback=brandDeep,colframe=brandDeep,arc=5pt,boxrule=0pt,left=9pt,right=9pt,top=8pt,bottom=8pt]",
   sidebarSection("Skills", (resume.skills ?? []).map(skillBlock)),
-  sidebarSection("Interests", (resume.interests ?? []).map(interestBlock)),
   sidebarSection("Languages", (resume.languages ?? []).map(languageBlock)),
   "\\end{tcolorbox}",
   "\\end{minipage}",
   "\\hfill",
-  "\\begin{minipage}[t]{0.635\\textwidth}",
-  "\\begin{tcolorbox}[enhanced,colback=white,colframe=brandSlate!22,arc=6pt,boxrule=0.6pt,left=12pt,right=12pt,top=10pt,bottom=10pt]",
+  "\\begin{minipage}[t]{0.69\\textwidth}",
+  "\\begin{tcolorbox}[enhanced,colback=white,colframe=brandSlate!22,arc=5pt,boxrule=0.55pt,left=10pt,right=10pt,top=8pt,bottom=8pt]",
   "\\resumeMainSection{Summary}",
   `\\resumeBody{${latex(basics.summary)}}`,
-  "\\vspace{0.8em}",
+  "\\vspace{0.14em}",
   "\\resumeMainSection{Experience}",
   ...(resume.work ?? []).map(workBlock),
-  "\\resumeMainSection{References}",
-  `\\resumeBody{${latex(resume.references?.[0]?.reference ?? "Available upon request.")}}`,
   "\\end{tcolorbox}",
   "\\end{minipage}",
   "",
