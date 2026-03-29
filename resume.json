@@ -3,26 +3,100 @@
   "basics": {
     "name": "Jose Cancel",
     "label": "Full-stack developer and digital product builder",
-    "email": "hello@joche.dev",
+    "email": "info@joche.dev",
+    "phone": "+1 (787) 585-4646",
+    "location": {
+      "city": "San Juan",
+      "region": "Puerto Rico"
+    },
     "url": "https://joche.dev",
-    "summary": "Independent full-stack developer based in Puerto Rico, focused on accessible, performant, results-oriented websites and web applications."
+    "summary": "Multifaceted developer focused on full-stack delivery, digital design, brand systems, and AI-enabled support workflows. I build practical solutions that improve clarity, usability, and day-to-day business operations."
   },
   "skills": [
     {
-      "name": "Frontend",
-      "keywords": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+      "name": "UI/UX Design",
+      "keywords": ["User Interface", "User Experience", "Design Systems", "Figma"]
     },
     {
-      "name": "Backend",
-      "keywords": ["Node.js", "Python", "PHP", "API integrations"]
+      "name": "Web Development",
+      "keywords": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Responsive Design"]
     },
     {
-      "name": "Data",
-      "keywords": ["PostgreSQL", "MySQL", "MongoDB", "Supabase"]
+      "name": "Graphic Design",
+      "keywords": ["Adobe Suite", "Canva", "Brand Identity", "Production Assets"]
     },
     {
-      "name": "Platform",
-      "keywords": ["Vercel", "AWS", "DigitalOcean", "Stripe"]
+      "name": "Data & AI Systems",
+      "keywords": ["Data Analysis", "VTiger CRM", "Supabase", "Knowledge Systems"]
+    },
+    {
+      "name": "Programming",
+      "keywords": ["Python", "TypeScript", "Node.js", "PHP", "Git"]
+    },
+    {
+      "name": "Soft Skills",
+      "keywords": ["Communication", "Problem Solving", "Client Collaboration"]
+    }
+  ],
+  "work": [
+    {
+      "name": "Retail Manager Puerto Rico",
+      "position": "AI Systems Consultant",
+      "location": "San Juan, Puerto Rico",
+      "startDate": "2026-01",
+      "endDate": "2026-03",
+      "summary": "Delivered an AI support MVP that turned VTiger CRM cases and official documentation into a searchable internal knowledge system for bilingual troubleshooting.",
+      "highlights": [
+        "Built a Supabase-backed knowledge layer, Node.js / Express / TypeScript API, and import tooling for CRM and PDF sources.",
+        "Prepared ChatGPT Custom GPT action support so management and staff could run real internal support tests."
+      ]
+    },
+    {
+      "name": "Astrid Velez & Alliances",
+      "position": "Digital Solutions Architect",
+      "location": "San Juan, Puerto Rico",
+      "startDate": "2021-01",
+      "endDate": "2026-01",
+      "summary": "Led the design and implementation of digital solutions for a Spanish-first consulting, coaching, and training business.",
+      "highlights": [
+        "Built the official website and translated service positioning into a polished React, Vite, and Tailwind experience.",
+        "Supported the firm's digital infrastructure, design direction, and technology decisions for client-facing growth."
+      ]
+    },
+    {
+      "name": "Joche.dev",
+      "position": "Full-Stack Developer & IT Consultant",
+      "location": "San Juan, Puerto Rico",
+      "startDate": "2019-04",
+      "summary": "Independent practice delivering websites, brand systems, and technical consulting for businesses and startups.",
+      "highlights": [
+        "Designed and shipped websites, brand assets, and digital tooling aligned to client business goals.",
+        "Delivered the PrintMOP brand system and commercial vehicle wrap package from logo development through production-ready assets."
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Martial Arts",
+      "keywords": ["Discipline", "Fitness", "Self-Defense"]
+    },
+    {
+      "name": "Technology Exploration",
+      "keywords": ["Emerging Tech", "Gadgets", "Software Trends"]
+    },
+    {
+      "name": "Self-Improvement",
+      "keywords": ["Personal Development", "Mindfulness", "Learning"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
     }
   ],
   "projects": [
@@ -53,6 +127,11 @@
       "name": "Amador Trucking Company",
       "description": "Built a bilingual logistics website and supporting collateral, followed by SEO planning work.",
       "url": "https://amadortrucking.com"
+    }
+  ],
+  "references": [
+    {
+      "reference": "Available upon request."
     }
   ],
   "meta": {
