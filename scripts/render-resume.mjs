@@ -144,7 +144,7 @@ const lines = [
   "---",
   "",
   "\\begin{tcolorbox}[enhanced,colback=brandDeep,colframe=brandDeep,arc=5pt,boxrule=0pt,left=11pt,right=11pt,top=9pt,bottom=9pt]",
-  "{\\color{brandAmber}\\rule{4.5cm}{1.1pt}}\\\\[-0.15em]",
+  "{\\color{brandAmber}\\rule{4.5cm}{1.1pt}}\\\\[0.28em]",
   `{\\color{white}\\fontsize{14.6pt}{16.5pt}\\selectfont ${latex(basics.name)}}\\\\`,
   "\\vspace{0.08em}",
   `{\\color{white!92}\\fontsize{8.7pt}{9.8pt}\\selectfont ${latex(basics.label)}}\\\\`,
